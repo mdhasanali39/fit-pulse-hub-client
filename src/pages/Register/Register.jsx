@@ -43,7 +43,7 @@ const Register = () => {
       console.log(result?.user);
 
       // save user to database
-      //   const res = await axios.post(`http://localhost:5000/api/v1/create-user/${result?.user}`, {
+      //   const res = await axios.post(`https://fit-pulse-hub-server.vercel.app/api/v1/create-user/${result?.user}`, {
       //     name: result?.user?.displayName,
       //     email:result?.user?.email,
       //     role:"member"
