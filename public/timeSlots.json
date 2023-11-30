@@ -1,0 +1,42 @@
+[
+  {
+    "startTime": "06:00 AM",
+    "endTime": "07:00 AM",
+    "slotName": "Early Morning Session"
+  },
+  {
+    "startTime": "07:00 AM",
+    "endTime": "08:00 AM",
+    "slotName": "Morning Session"
+  },
+  {
+    "startTime": "08:00 AM",
+    "endTime": "09:00 AM",
+    "slotName": "Late Morning Session"
+  },
+  {
+    "startTime": "09:00 AM",
+    "endTime": "10:00 AM",
+    "slotName": "Mid-Morning Session"
+  },
+  {
+    "startTime": "10:00 AM",
+    "endTime": "11:00 AM",
+    "slotName": "Late Morning Session"
+  },
+  {
+    "startTime": "11:00 AM",
+    "endTime": "12:00 PM",
+    "slotName": "Midday Session"
+  },
+  {
+    "startTime": "01:00 PM",
+    "endTime": "02:00 PM",
+    "slotName": "Afternoon Session"
+  },
+  {
+    "startTime": "02:00 PM",
+    "endTime": "03:00 PM",
+    "slotName": "Early Afternoon Session"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "class_name": "HIIT SPIN",
+    "description": "Rev Up Your Metabolism with High-Intensity Cycling",
+    "details": "45-minute class with intervals of high-intensity sprints and recovery periods.",
+    "benefits": [
+      "Boosts metabolism",
+      "Improves cardiovascular health",
+      "Burns calories effectively"
+    ],
+    "image": "https://i.ibb.co/X7xvKLX/person-doing-crossfit-training.jpg",
+    "duration": "45 minutes"
+  },
+  {
+    "class_name": "SPIN & SCULPT",
+    "description": "Combine Cycling with Strength Training for Total Body Toning",
+    "details": "60-minute class alternating between cycling segments and strength training exercises.",
+    "benefits": [
+      "Builds muscle",
+      "Enhances cardiovascular endurance",
+      "Shapes and tones the body"
+    ],
+    "image": "https://i.ibb.co/6NFMCSr/class-bg-3.jpg",
+    "duration": "1 hour"
+  },
+  {
+    "class_name": "CYCLE FUSION",
+    "description": "Mix It Up with a Blend of Cycling, Yoga, and Core Work",
+    "details": "Combines 30 minutes of cycling, 15 minutes of yoga, and 15 minutes of core exercises.",
+    "benefits": [
+      "Improves flexibility",
+      "Enhances core strength",
+      "Provides a balanced workout"
+    ],
+    "image": "https://i.ibb.co/PYt0n3n/class-bg-8.jpg",
+    "duration": "30 minutes"
+  },
+  {
+    "class_name": "RIDE & RESIST",
+    "description": "Challenge Yourself with Varied Intensity and Resistance Levels",
+    "details": "45-minute class with cycling intervals at different resistance levels.",
+    "benefits": [
+      "Builds leg strength",
+      "Increases endurance",
+      "Challenges cardiovascular system"
+    ],
+    "image": "https://i.ibb.co/7K2N5WB/class-bg-9.jpg",
+    "duration": "45 minutes"
+  },
+  {
+    "class_name": "SPIN & STRETCH",
+    "description": "Achieve Flexibility and Cardiovascular Fitness in One Class",
+    "details": "40-minute cycling session followed by 20 minutes of stretching and flexibility exercises.",
+    "benefits": [
+      "Improves flexibility",
+      "Enhances cardiovascular health",
+      "Reduces muscle tension"
+    ],
+    "image": "https://i.ibb.co/gzYpPB9/class-bg-6.jpg",
+    "duration": "40 minutes"
+  },
+  {
+    "class_name": "POWER PEDAL",
+    "description": "Maximize Strength and Stamina with Intense Cycling Workouts",
+    "details": "60-minute high-intensity cycling class with focus on power and stamina.",
+    "benefits": [
+      "Builds leg strength",
+      "Enhances cardiovascular endurance",
+      "Promotes overall fitness"
+    ],
+    "image": "https://i.ibb.co/7yGgBjW/class-bg-7.jpg",
+    "duration": "1 hour"
+  },
+  {
+    "class_name": "CYCLE CIRCUIT",
+    "description": "Rotate Through Cycling and Circuit Training Stations",
+    "details": "Circuit-style class alternating between cycling and full-body circuit training.",
+    "benefits": [
+      "Total body workout",
+      "Improves cardiovascular health",
+      "Increases strength and endurance"
+    ],
+    "image": "https://i.ibb.co/pzDZkth/class-bg-5.jpg",
+    "duration": "30 minutes"
+  },
+  {
+    "class_name": "SPIN & BOX",
+    "description": "Punch and Pedal Your Way to a Stronger Body",
+    "details": "45-minute class combining cycling intervals with boxing-inspired exercises.",
+    "benefits": [
+      "Cardiovascular conditioning",
+      "Enhances upper body strength",
+      "Burns calories effectively"
+    ],
+    "image": "https://i.ibb.co/K7YDWWD/portrait-man-sitting-wooden-box-gym.jpg",
+    "duration": "45 minutes"
+  },
+  {
+    "class_name": "SPIN & SPLASH",
+    "description": "Take Cycling to the Pool for a Low-Impact, High-Intensity Workout",
+    "details": "Aquatic cycling class in the pool for a low-impact yet challenging workout.",
+    "benefits": [
+      "Low-impact exercise",
+      "Cardiovascular conditioning",
+      "Cooling and refreshing"
+    ],
+    "image": "https://i.ibb.co/CQc3mSH/class-bg-1.jpg",
+    "duration": "25 minutes"
+  },
+  {
+    "class_name": "RIDE INTO THE SUNSET",
+    "description": "Wind Down Your Day with a Calming Evening Cycling Session",
+    "details": "Relaxing 45-minute cycling session with lower intensity for evening wind-down.",
+    "benefits": [
+      "Stress relief",
+      "Improves sleep quality",
+      "Gentle cardiovascular exercise"
+    ],
+    "image": "https://i.ibb.co/k8SYYKZ/class-bg-2.jpg",
+    "duration": "45 minutes"
+  },
+  {
+    "class_name": "CYCLE & CLIMB",
+    "description": "Simulate Uphill Climbs for an Extra Challenge and Leg Burn",
+    "details": "Simulates uphill climbs for an intense lower body workout.",
+    "benefits": [
+      "Builds leg strength",
+      "Enhances endurance",
+      "Burns calories effectively"
+    ],
+    "image": "https://i.ibb.co/bdB3JB3/class-bg-10.jpg",
+    "duration": "30 minutes"
+  },
+  {
+    "class_name": "EXPRESS SPIN",
+    "description": "Get a Quick, Effective Cardio Boost in a 30-Minute Session",
+    "details": "Short and intense 30-minute cycling session for a quick cardio blast.",
+    "benefits": ["Time-efficient", "Burns calories", "Boosts energy levels"],
+    "image": "https://i.ibb.co/Mc9cRGD/man-exercising-gym-full-shot.jpg",
+    "duration": "30 minutes"
+  },
+  {
+    "class_name": "CYCLE YOGA FLOW",
+    "description": "Blend the Serenity of Yoga with the Intensity of Cycling",
+    "details": "Combines 40 minutes of cycling with 20 minutes of yoga flow.",
+    "benefits": [
+      "Improves flexibility",
+      "Enhances mind-body connection",
+      "Cardiovascular conditioning"
+    ],
+    "image": "https://i.ibb.co/bdB3JB3/class-bg-10.jpg",
+    "duration": "40 minutes"
+  },
+  {
+    "class_name": "SPIN & STRIDE",
+    "description": "Incorporate Sprints and Running Intervals into Your Cycling Routine",
+    "details": "Alternates between cycling and running intervals for a dynamic workout.",
+    "benefits": [
+      "Cardiovascular conditioning",
+      "Improves running speed",
+      "Burns calories effectively"
+    ],
+    "image": "https://i.ibb.co/K7YDWWD/portrait-man-sitting-wooden-box-gym.jpg",
+    "duration": "40 minutes"
+  },
+  {
+    "class_name": "CYCLE & CIRQUE",
+    "description": "Add a Touch of Circus-Inspired Acrobatics to Your Cycling",
+    "details": "Cycling class infused with circus-inspired acrobatic movements.",
+    "benefits": [
+      "Enhances agility",
+      "Fun and unique workout",
+      "Improves coordination"
+    ],
+    "image": "",
+    "duration": "40 minutes"
+  },
+  {
+    "class_name": "SPIN & SWING",
+    "description": "Combine Cycling with Kettlebell Swings for Full-Body Power",
+    "details": "Integrates cycling with kettlebell swings for a full-body workout.",
+    "benefits": [
+      "Strengthens muscles",
+      "Cardiovascular conditioning",
+      "Enhances power and explosiveness"
+    ],
+    "image": "",
+    "duration": "40 minutes"
+  },
+  {
+    "class_name": "ENDURANCE RIDE",
+    "description": "Push Your Limits with Extended Cardiovascular Challenges",
+    "details": "90-minute endurance-focused cycling class with varied intensity levels.",
+    "benefits": [
+      "Enhances cardiovascular endurance",
+      "Burns calories",
+      "Builds mental toughness"
+    ],
+    "image": "",
+    "duration": "90 minutes"
+  },
+  {
+    "class_name": "CYCLE CORE",
+    "description": "Build a Solid Core Foundation Alongside Cardio Conditioning",
+    "details": "50-minute class combining cycling with core-strengthening exercises.",
+    "benefits": [
+      "Strengthens core muscles",
+      "Improves balance",
+      "Enhances overall fitness"
+    ],
+    "image": "",
+    "duration": "50 minutes"
+  }
+]
