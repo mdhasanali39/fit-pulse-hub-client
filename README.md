@@ -43,8 +43,6 @@ in my website,
   - Add new forum
 
   - Add new class
-
-  - Balance and
 - member can access 
   - activity logs
 
