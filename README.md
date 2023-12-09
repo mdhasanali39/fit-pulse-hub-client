@@ -48,7 +48,7 @@ in my website,
 
   - Profile Setting
 
-  - ecommendation Classes
+  - recommendation Classes
 
 
 ### login/register page
