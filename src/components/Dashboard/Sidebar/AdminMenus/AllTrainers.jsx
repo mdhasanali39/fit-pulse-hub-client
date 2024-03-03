@@ -3,16 +3,61 @@ import { getTrainers } from "../../../../api/trainer";
 import AllTrainersRow from "./RowCard/AllTrainersRow";
 import Title from "../../../Shared/Title/Title";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axiosSecure from "../../../../api";
 
 const AllTrainers = () => {
   const [amount,setAmount] = useState(150)
-  const { data: trainers = [] } = useQuery({
+  const [salaryStatus, setSalaryStatus] = useState("unpaid")
+
+
+  // get all trainers 
+  const { data: trainers = [], refetch } = useQuery({
     queryKey: ["trainers"],
     queryFn: async () => await getTrainers(),
   });
-  console.log(trainers);
+  // console.log(trainers);
 
+  useEffect(()=>{
+   const isPaid = trainers.find(item => item.salary === "paid")
+   if(isPaid){
+    setSalaryStatus("paid")
+   }
+   console.log(isPaid);
+  },[trainers])
+  
+
+  useEffect(()=>{
+    const updateTrainer = async() =>{
+      const {data} = await axiosSecure.patch("/status-unpaid",{salary:"unpaid"})
+        if(data.modifiedCount >0){
+          setSalaryStatus("unpaid")
+          refetch()
+        }
+        console.log(data);
+    }
+    updateTrainer()
+  },[])
+
+  // useEffect(()=>{
+    // const month_ms = ((((1000 * 60) * 60) * 24) * 30)
+    // let salaryStatus = "unpaid"
+    // const interval = setInterval(async() => {
+        //  update trainer salary status to unpaid every month 
+        // const {data} = await axiosSecure.patch("/update-trainers",{salary:"unpaid"})
+        // if(data.modifiedCount >0){
+        //   setSalaryStatus("unpaid")
+        //   // refetch()
+        // }
+        // console.log(data);
+    // },2592000000);
+    // return ()=> {
+    //   return clearInterval(interval)
+    // }
+  // },[])
+
+
+  console.log(salaryStatus);
   return (
     <div className="overflow-x-auto  min-h-[90vh]">
       <Title
@@ -22,7 +67,7 @@ const AllTrainers = () => {
       ></Title>
 
       {/* TODO: conditionally render payment card section interval one month(30days) */}
-        <div className="w-1/2 mx-auto space-y-3 my-9  border bg-black-text rounded-md p-4 text-white">
+        {salaryStatus === "unpaid" && <div className="w-1/2 mx-auto space-y-3 my-9  border bg-black-text rounded-md p-4 text-white">
           <h2 className="font-bold text-3xl text-center">----Monthly Payment-----</h2>
           <h2 className="font-bold text-xl">
             Monthly Payment amount for every trainer: ${amount}
@@ -39,7 +84,7 @@ const AllTrainers = () => {
             Pay Now
           </button>
           </Link>
-        </div>
+        </div>}
 
 
       <table className="table">

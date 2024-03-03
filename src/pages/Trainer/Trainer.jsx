@@ -48,7 +48,7 @@ const Trainer = () => {
         color="text-white"
       ></Cover>
       {/* all trainers  */}
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-8">
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-8 w-3/4 mx-auto">
         {isLoading ? (
           <span>Loading...</span>
         ) : (

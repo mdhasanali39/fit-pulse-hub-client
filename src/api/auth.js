@@ -10,6 +10,18 @@ export const saveUser = async(user) =>{
     const {data} = await axiosSecure.post(`/create-user/${user?.email}`, userData)
     return data;
 }
+
+// update user profile 
+export const updateUser = async (updatedUserInfo,email) =>{
+    const {data} = await axiosSecure.put(`/update-user/${email}`,updatedUserInfo)
+    return data;
+}
+// get single user or from how many days user created account 
+export const getSingleUser = async email =>{
+    const {data} = await axiosSecure.get(`/get-user/${email}`)
+    return data;
+}
+
 // get role 
 export const getRole = async email =>{
     const {data} = await axiosSecure.get(`/user-role/${email}`)

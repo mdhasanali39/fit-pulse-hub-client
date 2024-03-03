@@ -26,6 +26,7 @@ import Balance from "../components/Dashboard/Sidebar/AdminMenus/Balance/Balance"
 import ClassDetails from "../pages/Classes/ClassDetails/ClassDetails";
 import { getSingleClass } from "../api/classes";
 import AddNewForum from "../components/Dashboard/Sidebar/AddNewForumMenu/AddNewForum";
+import Forum from "../pages/Forum/Forum";
 
 export const router = createBrowserRouter([
     // main layout 
@@ -67,9 +68,9 @@ export const router = createBrowserRouter([
                 element: <BecomeTrainer></BecomeTrainer>
             },
             {
-                path: 'trainer-details/:id',
+                path: 'trainer-details/:email',
                 element: <TrainerDetails></TrainerDetails>,
-                loader: ({params})=> getSingleTrainer(params.id) 
+                loader: ({params})=> getSingleTrainer(params.email) 
             },
             {
                 path: 'book-package',
@@ -82,6 +83,10 @@ export const router = createBrowserRouter([
             {
                 path: 'trainerPayment',
                 element: <TrainerPayment></TrainerPayment>
+            },
+            {
+                path: 'forum',
+                element: <Forum></Forum>
             }
         ]
     },

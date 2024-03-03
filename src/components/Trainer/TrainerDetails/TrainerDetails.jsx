@@ -24,9 +24,9 @@ const TrainerDetails = () => {
 
   console.log(timeSlots);
 
-  const handleSlotClicked = (slotId, trainerId) =>{
-    console.log("slot",slotId, "trainer id", trainerId);
-    navigate(`/book-package?slot=${slotId}&trainer=${trainerId}`)
+  const handleSlotClicked = (slotId, trainer_email) =>{
+    console.log("slot",slotId, "trainer id", trainer_email);
+    navigate(`/book-package?slot=${slotId}&trainer=${trainer_email}`)
 
   }
 
@@ -50,7 +50,7 @@ const TrainerDetails = () => {
               endTime={timeSlot.endTime}
               slotName={timeSlot.slotName}
               slot_id={timeSlot._id}
-              trainer_id={trainer?._id}
+              trainer_email={trainer?.trainer_email}
               handleSlotClicked={handleSlotClicked}
             ></TimeSlotCard>
           ))}

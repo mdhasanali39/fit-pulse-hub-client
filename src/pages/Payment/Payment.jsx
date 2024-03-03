@@ -69,7 +69,7 @@ const Payment = () => {
                 slotId={slot}
                 trainerEmail={trainerData?.trainer_email}
                 trainerName={trainerData?.trainer_name}
-                trainerId={trainer}
+                trainerId={trainerData?._id}
              />
           </Elements>
         </div>

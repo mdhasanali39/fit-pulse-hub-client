@@ -97,7 +97,7 @@ const NavItems = ({handleItemClick,active,setActive, handleLogOut}) => {
         className="text-lg font-semibold text-black-text"
       >
         <NavLink
-          to="/community"
+          to="/forum"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -106,7 +106,7 @@ const NavItems = ({handleItemClick,active,setActive, handleLogOut}) => {
               : "lg:text-white"
           }
         >
-          Community
+          forum
         </NavLink>
       </li>
       {

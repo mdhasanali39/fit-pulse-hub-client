@@ -84,8 +84,8 @@ console.log(clientSecret);
         }
         // console.log(paymentData);
 
-        const data = await axiosSecure.patch("/update-trainers",{salary:"received"})
-        // console.log(data.data);
+        const data = await axiosSecure.patch("/update-trainers",{salary:"paid"})
+        console.log(data.data);
 
         const res = await axiosSecure.post("/save-trainer-payment", paymentData)
         // console.log(res.data);

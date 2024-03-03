@@ -11,7 +11,8 @@ import {
 import { createContext, useEffect, useState } from "react";
 import auth from "../config/firebase.config";
 import { axiosPublic } from "../api";
-  
+import PropTypes from 'prop-types'
+
   // create context 
   export const AuthContext = createContext(null);
   // create google provider instance 
@@ -67,7 +68,6 @@ import { axiosPublic } from "../api";
         if(currentUser){
           axiosPublic.post("/create-token", {email: currentUser?.email})
           .then(res =>{
-            console.log(res.data);
             if(res.data.token){
               localStorage.setItem("access-token", res.data.token)
               setLoading(false);
@@ -99,5 +99,7 @@ import { axiosPublic } from "../api";
       <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
     );
   };
-  
+  AuthProvider.propTypes = {
+    children:PropTypes.node.isRequired,
+  }
   export default AuthProvider;

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Title from "../../components/Shared/Title/Title";
 import ClassesCard from "./ClassesCard";
 import { useQuery } from "@tanstack/react-query";
@@ -6,7 +5,6 @@ import { getAllClasses } from "../../api/classes";
 import DailyClassesSchedule from "../../components/Classes/DailyClassesSchedule";
 
 const Classes = () => {
-  // const [classes, setClasses] = useState([]);
 
   const {data:classes=[]} = useQuery({
     queryKey:["classes"],

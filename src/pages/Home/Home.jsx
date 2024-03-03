@@ -12,7 +12,9 @@ const Home = () => {
             {/* banner  */}
             <Banner></Banner>
             {/* AboutUs */}
+            {/* <div id="about_us"> */}
             <AboutUs></AboutUs>
+            {/* </div> */}
             {/* our fetures */}
             <Features></Features>
             {/* featured classes  */}

@@ -29,7 +29,7 @@ const AllTrainersRow = ({ trainer, idx }) => {
       </td>
       <td>{trainer_name}</td>
       <td>{trainer_email}</td>
-      <td>{salary === "pending"? "pending": "paid"}</td>
+      <td>{salary === "unpaid"? "unpaid": "paid"}</td>
     </tr>
   );
 };

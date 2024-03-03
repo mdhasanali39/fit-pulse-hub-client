@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { saveTrainer } from "../../api/trainer";
+import { saveImage } from "../../utils/utils";
 
 const BecomeTrainerForm = () => {
   const { user } = useAuth();
@@ -47,17 +48,15 @@ const BecomeTrainerForm = () => {
     }
     // get image display_url
     const image = form.photo.files[0]
-    const formData = new FormData()
-    formData.append("image", image)
-    const {data} = await axios.post(`https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API_KEY}`, formData)
-    console.log(data.data.display_url);
+    const {data} = await saveImage(image)
 
+    console.log(data);
 
     const trainerData  = {
         trainer_name:fullName,
         trainer_email:email,
         trainer_age:age,
-        image_url:data.data.display_url,
+        image_url:data.display_url,
         skills: selectedSkills,
         experience: experience,
         available_time_in_week: timeInWeek,
@@ -65,20 +64,20 @@ const BecomeTrainerForm = () => {
         status: "unverified"
     }
 
-    try {
-      const data = await saveTrainer(trainerData,email)
-      if(data.status){
-        toast.success(data.status)
-        navigate("/trainer")
-      }
-      if(data.insertedId){
-        toast.success("Applied successfully")
-        navigate("/trainer")
-      }
-      // console.log(data);
-    } catch (err) {
-      console.log(err);
-    }
+    // try {
+    //   const data = await saveTrainer(trainerData,email)
+    //   if(data.status){
+    //     toast.success(data.status)
+    //     navigate("/trainer")
+    //   }
+    //   if(data.insertedId){
+    //     toast.success("Applied successfully")
+    //     navigate("/trainer")
+    //   }
+    //   // console.log(data);
+    // } catch (err) {
+    //   console.log(err);
+    // }
 
     console.log(trainerData);
   };

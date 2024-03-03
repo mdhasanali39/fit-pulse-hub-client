@@ -17,12 +17,12 @@ export const getAppliedTrainers = async ()=>{
 }
 
 // get single trainer data 
-export const getSingleTrainer = async id =>{
-    const {data} = await axiosSecure.get(`/trainer/${id}`);
+export const getSingleTrainer = async email =>{
+    const {data} = await axiosSecure.get(`/trainer/${email}`);
     return data
 }
 
-// get time slots
+// get all time slots
 export const getTimeSlots = async ()=>{
     const {data} = await axiosSecure.get("/time-slots");
     return data;
@@ -32,6 +32,18 @@ export const getSingleSlot = async id =>{
     const {data} = await axiosSecure.get(`/time-slot/${id}`)
     return data;
 }
+
+// get all bookedByMembers 
+export const getBookedByMembers = async email =>{
+    const {data} = await axiosSecure.get(`/all-booked-by-members/${email}`)
+    return data;
+}
+// get single booked membership 
+export const getSingleBookedByMember = async email =>{
+    const {data} = await axiosSecure.get(`/single-booked-by-member/${email}`)
+    return data;
+}
+
 // check is unverified 
 export const checkIsUnverified = async email =>{
     const {data} = await axiosSecure.get(`/unverified-trainer/${email}`)

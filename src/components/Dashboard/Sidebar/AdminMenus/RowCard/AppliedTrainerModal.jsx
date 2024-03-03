@@ -56,15 +56,17 @@ const AppliedTrainerModal = ({ trainer, handleAccept, trainerLoading }) => {
             </div>
             <div className="modal-action">
               <form method="dialog" className="flex gap-4">
-                {/* if there is a button in form, it will close the modal */}
+                {/* accept button  */}
                 <button
                   onClick={() => handleAccept(trainer_email, _id)}
                   className="flex gap-1 items-center  uppercase text-lg text-black font-semibold px-4 py-1 rounded-lg bg-action-bg  hover:bg-black-text hover:text-white   transition ease-linear duration-300"
                 >
                   Accept
                 </button>
+                {/* reject button  */}
                 <button className="flex gap-1 items-center  uppercase text-lg text-black font-semibold px-4 py-1 rounded-lg bg-red-500  hover:bg-black-text hover:text-white   transition ease-linear duration-300">Reject</button>
 
+                {/* close button  */}
                 <button className="flex gap-1 items-center absolute top-5 right-4  uppercase text-lg text-black font-semibold px-4 py-2 rounded-lg bg-red-500  hover:bg-black-text hover:text-white   transition ease-linear duration-300"><FaTimes/></button>
               </form>
             </div>

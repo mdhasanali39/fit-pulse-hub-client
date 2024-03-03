@@ -4,7 +4,7 @@ import TimeSlotCard from "./TimeSlotCard";
 import { Link } from "react-router-dom";
 
 const TrainerCard = ({ trainer, timeSlots }) => {
-  const {_id, trainer_name, image_url, experience, available_time_in_day } =
+  const {_id,trainer_email, trainer_name, image_url, experience, available_time_in_day } =
     trainer || {};
 
     // get slots - how much 
@@ -49,12 +49,13 @@ const TrainerCard = ({ trainer, timeSlots }) => {
           <TimeSlotCard
             key={tiemSlot._id}
             slotName={tiemSlot.slotName}
+            isTrainerCard={true}
           ></TimeSlotCard>
         ))}
       </div>
       {/* know more button  */}
       <div className="mb-6 mt-7">
-        <Link to={`/trainer-details/${_id}`}>
+        <Link to={`/trainer-details/${trainer_email}`}>
         <button
           type="submit"
           className="flex gap-1 items-center mx-auto uppercase text-lg text-black font-semibold px-4 py-1 rounded-lg bg-action-bg border hover:bg-white  hover:border-action-text transition ease-linear duration-300"

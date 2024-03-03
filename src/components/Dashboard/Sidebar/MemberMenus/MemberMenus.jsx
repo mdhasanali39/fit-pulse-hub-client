@@ -8,7 +8,7 @@ const MemberMenus = () => {
     <div className="flex flex-col gap-6">
       <MenuItem icon={RxActivityLog} label="activity log" address="activity-log" />
       <MenuItem icon={IoSettings} label="profile setting" address="profile-settings" />
-      <MenuItem icon={MdRecommend} label="recommendation classes" address="recommendation-classes" />
+      <MenuItem icon={MdRecommend} label="recommended classes" address="recommendation-classes" />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
-const ClassesCard = ({ classItem }) => {
+const ClassesCard = ({ classItem,recommendedClass }) => {
   const navigate = useNavigate()
   const { class_name, image, duration } = classItem || {};
 
@@ -12,7 +12,7 @@ const ClassesCard = ({ classItem }) => {
   return (
     <div onClick={()=>handleClass(classItem?._id)}>
       <div className="rounded-md relative">
-        <div className="h-[300px]">
+        <div className={`${ recommendedClass ? "h-[100px]" :"h-[300px]"}`}>
           <img
             className="h-full w-full object-cover rounded-md"
             src={image}

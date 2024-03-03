@@ -11,7 +11,7 @@ const FeaturedClasses = () => {
     })
 
     return (
-        <div className="mb-20">
+        <div id="test" className="mb-20">
         <Title heading_first="featured" heading_last="classes" subHeading="here we featured some classes"></Title>
         <div className="w-3/4 mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {
